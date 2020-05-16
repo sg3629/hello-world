@@ -34,7 +34,7 @@ exit and check docker version
   - docker run -t -i -d -p 5050:5050 flask-1
 ## Test
   - curl http://0.0.0.0:5050
-  hello world 
+  > hello world 
 
 # Push docker images to AWS ECS image repository 
 
