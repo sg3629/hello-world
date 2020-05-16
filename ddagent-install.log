@@ -1,0 +1,34 @@
+[33mWarning: DD_AGENT_MAJOR_VERSION not set. Installing Agent version 6 by default.[0m
+[34m
+* Installing YUM sources for Datadog
+[0m
+[34m* Installing the Datadog Agent package
+[0m
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Cleaning repos: amzn2-core amzn2extra-docker datadog
+13 metadata files removed
+6 sqlite files removed
+0 metadata files removed
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Package matching 1:datadog-agent-6.19.2-1.x86_64 already installed. Checking for update.
+Nothing to do
+[34m
+* Keeping old datadog.yaml configuration file
+[0m
+/usr/bin/systemctl
+[34m* Starting the Agent...
+[0m
+[32m
+
+Your Agent is running and functioning properly. It will continue to run in the
+background and submit metrics to Datadog.
+
+If you ever want to stop the Agent, run:
+
+    sudo systemctl stop datadog-agent
+
+And to run it again run:
+
+    sudo systemctl start datadog-agent
+
+[0m
