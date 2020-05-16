@@ -11,6 +11,7 @@ This problem can be solved in more than one way but you can go with a solution t
 1. AWS EC2 instance
 2. AWS ECS cluster using Fargate  
 3. AWS Container launch using Fargate
+4. Datadog APM 
 
 # Install Docker on EC2 instance
 
@@ -44,9 +45,3 @@ Authenticate to image repository using https://docs.aws.amazon.com/AmazonECR/lat
   - docker tag flask-1 <ID>.dkr.ecr.us-east-1.amazonaws.com/hello-world-repository-4
   - docker push <ID>.dkr.ecr.us-east-1.amazonaws.com/hello-world-repository-4 
 
-
-
-
-
-
-# 
