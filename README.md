@@ -1,4 +1,4 @@
-# DevOps exercise
+# DevOps exercise:
 
 1. Create a barebones dockerized application (in the language of your choice) with just one endpoint that returns "hello world" and run it as an Elastic Container Service on an ECS cluster in AWS. 
 
@@ -67,3 +67,12 @@ Follow the guide: https://app.datadoghq.com/account/settings#integrations/aws-fa
 
   - curl http://54.162.112.237:5050 
   > hello world
+
+# Other approaches evaluated 
+
+  ## 1. Running datadog daemon as part of docker application 
+    - Issue observed was it required systemd services to start daemon services inside a docker. However, that access was not available inside a docker application. This approched word for an AWS EC2 instance 
+  ## 2. Creating ECS task difinition using EC2 
+    - This approached worked. However, here docker application is running on an EC2 instance. The infrastructure has dependency on the EC2 instance which needs to be self-managed. Scalling could be an issue. 
+  ## 2. Creating ECS task definition using Fargate
+  - This approached workedand is the one submitted. Here, the advantage is the infrastructre is managed by AWS and scalling the application when APM shows high number of request can be automated
