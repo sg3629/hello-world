@@ -45,7 +45,7 @@ Authenticate to image repository using https://docs.aws.amazon.com/AmazonECR/lat
   - docker tag flask-1 <ID>.dkr.ecr.us-east-1.amazonaws.com/hello-world-repository-4
   - docker push <ID>.dkr.ecr.us-east-1.amazonaws.com/hello-world-repository-4  
 
-# Amazon ECS and Datadog Fargate integrtration 
+# Amazon ECS and Datadog Fargate integration 
 
 Follow the guide: https://app.datadoghq.com/account/settings#integrations/aws-fargate 
 
