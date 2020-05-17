@@ -27,7 +27,7 @@ exit and check docker version
 
   - git clone git@github.com:sg3629/hello-world.git
 
-# Build and Test the hello-world docker application 
+# Build and Test the hello-world docker application - local
 
 ## Build
   - cd hello-world 
@@ -49,5 +49,21 @@ Authenticate to image repository using https://docs.aws.amazon.com/AmazonECR/lat
 
 Follow the guide: https://app.datadoghq.com/account/settings#integrations/aws-fargate 
 
+# Run and Test hello-world docker application on ECS 
 
+  ## Setup and Run
+  - Create ECS cluster followed by Fargate 
+  - Create Task definition with launch type Fargate 
+  - Allocate required resources, roles, size
+  - Add required containers for application and datadog-agent 
+      - datadog-agent 
+        - provide image and DD_API_key and ECS_FARGATE 
+      - hello-world app
+        - provide pushed image registry,, ports (5050 and 8126), and docker labels 
+  - Associate security groups as per required TCP ports 
+  - Run task definition 
+ 
+  ## Test 
 
+  - curl http://54.162.112.237:5050 
+  > hello world
