@@ -27,7 +27,7 @@ exit and check docker version
 
   - git clone git@github.com:sg3629/hello-world.git
 
-# Build and Test the hello-world docker application - local
+# Build, Run and Test the hello-world docker application - local
 
 ## Build
   - cd hello-world 
