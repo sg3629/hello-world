@@ -75,4 +75,4 @@ Follow the guide: https://app.datadoghq.com/account/settings#integrations/aws-fa
   ## 2. Creating ECS task difinition using EC2 
     - This approached worked. However, here docker application is running on an EC2 instance. The infrastructure has dependency on the EC2 instance which needs to be self-managed. Scalling could be an issue. 
   ## 2. Creating ECS task definition using Fargate
-    - This approached workedand is the one submitted. Here, the advantage is the infrastructre is managed by AWS and scalling the application when APM shows high number of request can be automated
+    - This approached worked and is the one submitted. Here, the advantage is the infrastructre is managed by AWS and scalling the application when APM shows high number of request can be automated using AWS ECS automation and load balancer
