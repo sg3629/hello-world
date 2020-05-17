@@ -1,4 +1,4 @@
-# DevOps Exercise:
+# DevOps exercise:
 
 1. Create a barebones dockerized application (in the language of your choice) with just one endpoint that returns "hello world" and run it as an Elastic Container Service on an ECS cluster in AWS. 
 
@@ -6,14 +6,14 @@
 
 This problem can be solved in more than one way but you can go with a solution that you think is best. The most important part of this exercise is the self-evaluation of the solution. So please take the time to document the pros, cons, and improvements that can be made on top of your solution.
 
-# Environment Details
+# Environment details
 
 1. AWS EC2 instance
 2. AWS ECS cluster using Fargate  
 3. AWS Container launch using Fargate
 4. Datadog APM 
 
-# Install Docker on EC2 instance
+# Install docker on EC2 instance
 
   - sudo yum update -y
   - sudo amazon-linux-extras install docker
@@ -27,9 +27,9 @@ exit and check docker version
 
   - git clone git@github.com:sg3629/hello-world.git
 
-# Build, Run and Test the hello-world docker application - local
+# Build, run and test the hello-world docker application - local
 
-## Build
+## Build and run
   - cd hello-world 
   - docker build -t flask-1:latest . 
   - docker run -t -i -d -p 5050:5050 flask-1
@@ -49,9 +49,9 @@ Authenticate to image repository using https://docs.aws.amazon.com/AmazonECR/lat
 
 Follow the guide: https://app.datadoghq.com/account/settings#integrations/aws-fargate 
 
-# Setup, Run and Test hello-world docker application on ECS 
+# Setup, run and rest hello-world docker application on ECS 
 
-  ## Setup and Run
+  ## Setup and run
   - Create ECS cluster followed by Fargate 
   - Create Task definition with launch type Fargate 
   - Allocate required resources, roles, size
