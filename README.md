@@ -49,7 +49,7 @@ Authenticate to image repository using https://docs.aws.amazon.com/AmazonECR/lat
 
 Follow the guide: https://app.datadoghq.com/account/settings#integrations/aws-fargate 
 
-# Run and Test hello-world docker application on ECS 
+# Setup, Run and Test hello-world docker application on ECS 
 
   ## Setup and Run
   - Create ECS cluster followed by Fargate 
