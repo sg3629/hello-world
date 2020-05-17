@@ -1,4 +1,4 @@
-# DevOps exercise:
+# DevOps exercise
 
 1. Create a barebones dockerized application (in the language of your choice) with just one endpoint that returns "hello world" and run it as an Elastic Container Service on an ECS cluster in AWS. 
 
