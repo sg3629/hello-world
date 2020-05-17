@@ -59,7 +59,7 @@ Follow the guide: https://app.datadoghq.com/account/settings#integrations/aws-fa
       - datadog-agent 
         - provide image and DD_API_key and ECS_FARGATE 
       - hello-world app
-        - provide pushed image registry,, ports (5050 and 8126), and docker labels 
+        - provide pushed image registry,ports (5050 and 8126), and docker labels 
   - Associate security groups as per required TCP ports 
   - Run task definition 
  
